@@ -44,7 +44,7 @@ def check_access():
     if os.path.exists(temp_image_path):
         os.remove(temp_image_path)
 
-def capture_student_image(student_id, output_dir="images/"):
+def capture_student_image(student_id, output_dir="app/images/"):
     os.makedirs(output_dir, exist_ok=True)
     camera = cv2.VideoCapture(0)
 
@@ -65,7 +65,7 @@ def capture_student_image(student_id, output_dir="images/"):
     camera.release()
     cv2.destroyAllWindows()
 
-def verify_student(image_path, database_dir="images/"):
+def verify_student(image_path, database_dir="app/images/"):
     if not os.path.exists(image_path):
         print(f"Erreur : le fichier {image_path} n'existe pas.")
         return None
