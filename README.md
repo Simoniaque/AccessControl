@@ -1,7 +1,9 @@
 1. Prérequis
 - Python : Assurez-vous que Python est installé sur votre machine.
 Pour vérifier la version de Python :
+```
   python --version
+```
 Si Python n'est pas installé, téléchargez-le depuis le site officiel "python.org" ou depuis le microsoft store.
 
 - pip : Un gestionnaire de paquets Python. Il est généralement inclus avec Python. Pour vérifier :
